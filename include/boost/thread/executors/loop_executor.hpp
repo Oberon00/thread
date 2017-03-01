@@ -109,9 +109,7 @@ namespace executors
       {
       }
       BOOST_ASSERT(closed());
-      while (try_executing_one())
-      {
-      }
+      BOOST_ASSERT(work_queue.empty());
     }
 
     /**
